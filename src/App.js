@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
+
+const App = () => {
+
+
+  let curDate = new Date();
+  curDate = curDate.getHours();
+
+  let greeting=''
+
+  const style = {};
+
+  if (curDate >=1 && curDate<12) {
+    greeting="Buenos Dias ! "
+    style.color="green"
+  } else if (curDate >=12  && curDate <19){
+    greeting="Buenas Tardes !"
+    style.color="orange"
+  } else{
+    greeting ="Buenas Noches ! "
+    style.color="grey"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+  <h1> Hola Amigos ! , <span style={style}> {greeting} </span> </h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
