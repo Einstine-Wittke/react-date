@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(116, 109, 109, 0.953);
+}
+
+.container {
+    margin: 2rem 16rem 0rem 16rem;
+    background-color: antiquewhite;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    height: 24rem;
+}
+
+.container img {
+    width: 28.75rem;
+    height: 15rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.container:hover {
+    background-color: whitesmoke;
+    transform: scale(1.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+    display: flex;
+}

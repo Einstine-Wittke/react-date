@@ -1,17 +1,5 @@
-body {
-  background-color: aquamarine;
-}
 
 .App {
   text-align: center;
 }
 
-h1 {
-  background-color: rgb(240, 201, 129);
-  color: red;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 11rem;
-  border-radius: 10px;
-
-}
