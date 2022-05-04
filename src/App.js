@@ -13,7 +13,7 @@ const App = () => {
       {SeriesData.map((value,index)=> {
         console.log(index)
         return (
-          <Props key={index}
+          <Props key={value.id}
             image={value.image}
             title={value.title}
             name={value.name}
